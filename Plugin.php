@@ -32,6 +32,13 @@ class Plugin extends PluginBase
             'Raviraj\Rjgallery\Components\Gallery' => 'gallery',
         ];
     }
+    
+    public function registerPermissions()
+	{
+	    return [
+	        'raviraj.rjgallery.*'       => ['label' => 'Access RJ Gallery Plugin'],
+	    ];
+	}
 
     public function registerNavigation()
     {
